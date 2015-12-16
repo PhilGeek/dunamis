@@ -1,0 +1,81 @@
+%!TEX TS-program = xelatex 
+
+%!TEX encoding = UTF-8 Unicode
+%
+%  dunamis
+%
+%  Created by Mark Eli Kalderon on 2015-12-16.
+%  Copyright (c) 2015. All rights reserved.
+%
+
+\documentclass[12pt]{book} 
+
+% Definitions
+\newcommand\mykeywords{perception, capacity}
+\newcommand\myauthor{Mark Eli Kalderon}
+
+% Packages
+\usepackage{geometry} \geometry{a4paper} 
+% \usepackage{url}
+% \usepackage{txfonts}
+\usepackage{color}
+\usepackage{epigraph}
+\usepackage{enumerate}
+% \usepackage{tikz}
+% \usepackage{amsmath}
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+\definecolor{gray}{rgb}{0.459,0.438,0.471}
+% \usepackage{setspace}
+% \doublespace % Uncomment for doublespacing if necessary
+
+% XeTeX
+\usepackage[cm-default]{fontspec}
+\usepackage{xltxtra,xunicode}
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+\setmainfont{Hoefler Text}
+
+% Bibliography
+\usepackage[round]{natbib}
+
+% Index
+% \usepackage{makeidx}
+% \makeindex
+
+% PDF Stuff
+\usepackage[plainpages=false, pdfpagelabels, bookmarksnumbered, backref, pdftitle={Form Without Matter}, pagebackref, pdfauthor={\myauthor}, pdfkeywords={\mykeywords}, xetex, colorlinks=true, citecolor=gray, linkcolor=gray, urlcolor=gray]{hyperref}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+% % Title Page
+\author{\myauthor}
+\title{\emph{Dunamis}\\
+The Power of Perception}
+\date{}
+
+\maketitle
+\pagenumbering{gobble}
+\frontmatter
+% \include{epigraph}
+\pagenumbering{roman}
+\tableofcontents
+% \include{preface}
+% \include{acknowledgements}
+
+\mainmatter
+
+
+\backmatter
+
+% Nocite
+
+
+% Bibligography
+\bibliographystyle{plainnat} 
+\bibliography{Philosophy}
+
+% Index
+% \printindex
+
+\end{document}
